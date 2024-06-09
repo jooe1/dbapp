@@ -1,0 +1,234 @@
+body{
+  margin: 0;
+  overflow: hidden;
+}
+
+.App {
+  text-align: center;
+  padding: 0;
+}
+
+.top-section{
+  background-color: rgb(142, 197, 255);
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.top-section button{
+  height: 4.935vh;
+  width: 5vw;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0 7px 7px 0;
+}
+
+
+.compare-section{
+  display: flex;
+  margin-top: 50px;
+}
+
+.left-section{
+  flex: 1;
+}
+
+.right-section{
+  flex: 1;
+}
+
+.right-dropdown{
+  flex: 1;
+  height: 5vh;
+}
+
+.right-dropdown button{
+  height: 100%;
+  font-size: 1vw;
+}
+
+.left-dropdown{
+  flex: 1;
+  height: 5vh;
+
+}
+
+.left-dropdown button{
+  height: 100%;
+  font-size: 1vw;
+}
+
+select{
+  width: 20vw;
+  height: 100%;
+  font-weight: 600;
+  font-size: 1vw;
+
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px 0 0 5px;
+
+}
+
+#compare-2-left select{
+  border-radius: 5px;
+}
+
+#compare-2-right select{
+  border-radius: 5px;
+}
+
+#compare-2-button{
+  width: 10vw;
+  border-radius: 7px;
+}
+
+.compare-button{
+  text-align: center;
+  width: 10vw;
+  
+}
+
+.compare-button button{
+  width: 10vw;
+  font-size: 1vw;
+  font-weight: 600;
+  border-radius: 7px;
+}
+
+.canvas-holder{
+  margin-left: 10vw;
+  height: 70vh;
+  width: 80vw;
+}
+
+canvas {
+  height: 20vh;
+}
+
+.select-section{
+  height: 100%;
+}
+
+#left-arrow{
+  position: absolute;
+  top: 40%;
+  left: 3%;
+  font-size: xx-large;
+  cursor: pointer;
+  user-select: none; 
+}
+
+#right-arrow{
+  position: absolute;
+  top: 40%;
+  right: 3%;
+  font-size: xx-large;
+  cursor: pointer;
+  user-select: none; 
+}
+
+span{
+  font-size: 0.7vw;
+  width: 0.8vw;
+  height: 0.8vw;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+.popup {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+
+dialog {
+  animation: fade-out 0.7s ease-out;
+  width: 40vw;
+  text-align: left;
+}
+
+dialog[open] {
+  backdrop-filter: blur(50px);
+}
+
+dialog[open]::backdrop {
+  animation: backdrop-fade-in 0.7s ease-out forwards;
+}
+
+
+.change-page{
+  /* background-color: rgb(229, 184, 235); */
+  background-color: #fff;
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  margin: 3vw;
+  cursor: pointer;
+}
+
+.change-page p{
+  margin-top: 0.5vw;
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+#new-table-dialog{
+  height: 35vh;
+  width: 300px;
+  border-radius: 5px;
+  padding: 0;
+  padding-bottom: 10px;
+}
+.new-table-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#new-table-dialog h2{
+  text-align: center;
+  background-color: rgb(142, 197, 255);
+  height: 7vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 16px;
+  margin-top: 0;
+  
+}
+
+
+.dialog-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dialog-buttons button{
+  width: 7vw;
+  height: 3vh;
+  font-weight: 700;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+
+}
+
+.new-table-container input{
+  width: 80%;
+  margin: 30px;
+  border-radius: 7px;
+  outline: none;
+  padding-left: 5px;
+}
